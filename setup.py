@@ -8,7 +8,7 @@ from setuptools.command.test import test as TestCommand
 
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(os.path.join(os.path.dirname(__file__), fname), encoding="utf-8").read()
 
 # Can't import __meta__.py if the requirements aren't installed
 # due to imports in __init__.py. This is a workaround.
