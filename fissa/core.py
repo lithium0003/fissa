@@ -116,7 +116,7 @@ def separate_func(inputs):
     alpha = inputs[1]
     method = inputs[2]
     Xsep, Xmatch, Xmixmat, convergence = npil.separate(
-        X, method, maxiter=20000, tol=1e-4, maxtries=1, alpha=alpha
+        X, method, maxiter=200000, tol=1e-4, maxtries=1, alpha=alpha
     )
     ROInum = inputs[3]
     print('Finished ROI number ' + str(ROInum))
